@@ -1,0 +1,1193 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+html,body{
+	height:100%;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<--PADRÃO-->>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{
+	clear: both;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<--HEADER-->>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+header{
+	padding: 15px 2%;
+}
+
+header .logo{
+	float: left;
+}
+header .logo img{
+	width: 180px;
+	height: 85px;
+}
+
+header .menu-desktop{
+	float: right;
+	position: relative;
+	top:32px;
+}
+
+header .menu-desktop li{
+	float: left;
+	list-style: none;
+}
+
+header .menu-desktop li a{
+	text-decoration: none;
+	padding: 0 20px;
+	font-size: 24px;
+	color: black;
+	text-transform: capitalize;
+}
+
+header .menu-mobile{
+	width: 32px;
+	height: 32px;
+	background-image: url('../imagens/icon_menu.png');
+	background-position: center;
+	background-size: 100% 100%;
+	float: right;
+	margin-top: 30px;
+
+	cursor: pointer;
+	display: none;
+}
+
+header .menu-mobile ul{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 125px;
+	text-align: center;
+	background-color: white;
+	border-bottom: 4px solid #EB2D2D;
+	z-index: 999;
+	display: none;
+}
+
+header .menu-mobile li{
+	padding-bottom: 8px;
+
+}
+
+header .menu-mobile li a{
+	text-decoration: none;
+
+	font-size: 24px;
+	color: black;
+	text-transform: capitalize;
+
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<--BANNER-->>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.banner{
+	width: 100%;
+	height: 570px;
+	min-height: 500px;
+	max-height: 800px;
+	background-color: black;
+	background-image: url('../imagens/bg.jpg');
+	background-size: contain;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.text-box-banner{
+	padding:110px 80px;
+/*	background-color: green;*/
+}
+
+.box-banner-single{
+
+	height: 68px;
+	line-height:56px; 
+
+	margin-top: 13px;
+
+	background-image: url('../imagens/box-text.png');
+	background-position: center;
+	background-size: 100% 100%;
+
+	color: white;
+	font-size: 40px;
+	position: relative;
+}
+
+.text-box-banner > .box-banner-single:nth-of-type(1){
+	width: 250px;
+	padding-left:40px;
+
+}
+
+.text-box-banner > .box-banner-single:nth-of-type(2){
+	width: 170px;
+	padding-left:30px;
+	right: 10px;
+}
+
+.text-box-banner > .box-banner-single:nth-of-type(3){
+	width: 130px;
+	padding-left:20px;
+	right: 20px;
+}
+
+.text-box-banner > .box-banner-single:nth-of-type(4){
+
+	width: 360px;
+	padding-left: 25px;
+	
+	background-image: url('../imagens/box-white-text.png');
+	background-position: center;
+	background-size: 100% 100%;	
+
+	right: 35px;
+	color: black;
+}
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<--VEICULOS-DESTAQUE-->>>>>>>>>>>>>>>>>>>>>>*/
+
+.veiculos-destaque{
+	text-align: center;
+	padding: 0 4%;
+}
+
+.veiculos-destaque > .container{
+	max-width: 1020px;
+	padding: 20px 2%;
+	display: flex;
+	align-items: center;
+}
+
+.back-line{
+	width: 100%;
+	max-width: 1200px;
+	padding: 10px 2%;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	margin-top: 15px;
+
+}
+
+.back-line .line{
+	width: 	100%;
+	height: 2px;
+	background-color: black;
+	position: absolute;
+	top: 40px;
+}
+
+.back-line h2{
+	padding: 0 15px;
+	max-width: 300px;
+	font-size: 28px;
+	color: black;
+	text-transform: uppercase;
+	background-color: white;
+	position: relative;
+	display: inline-block;
+}
+
+.box-exemplar{
+	width: 33.3%;
+	margin: 10px 0 10px 0;
+	border:5px solid white;
+}
+
+.boton{
+
+	width: 120px;
+	height: 40px;
+	line-height: 38px;
+	text-decoration: none;
+	color: white;
+	background-color:#EB2D2D;	
+	border-bottom: 5px solid #B21E1E;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+.box-exemplar .exemplar-img{
+	width: 100%;
+	padding-top: 100%;
+/*	background-image: url('../imagens/carro1.jpg');*/
+	background-size: 100% 100%;
+}
+
+.informe-car{
+	margin-top: 12px;
+}
+
+.box-exemplar .informe-car h2{
+	font-weight: 500;
+	font-size: 25px;
+}
+
+.box-exemplar .informe-car p{
+	font-size: 18px;
+	color: #353535;
+	margin: 2px 0 18px 0;
+}
+
+.box-exemplar .informe-car a{
+	display: block;
+	padding-left: 12px;
+
+
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<--EXPOSIÇÃO-->>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.exposicao{
+	width: 100%;
+	display: flex;
+	margin-top: 37px;	 
+}
+
+.first-side{
+	background-color: #242424;
+	width: 50%;
+	padding: 30px 0;
+	color: white;
+	text-align: center;
+}
+
+.content-first{
+	display: inline-block;
+	text-align: left;
+}
+
+.first-side .content-first h2{
+	font-weight: normal;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.first-side .content-first ul{
+	margin-left: 30px;
+	display: inline-block;
+	padding: 12px 0;
+}
+
+.first-side .content-first ul li{
+	font-size: 18px;
+}
+
+.first-side .content-first a{
+
+	display: inline-block;	
+	vertical-align: bottom;
+	padding: 0 24px;
+	margin-left:38px;
+}
+
+
+
+.second-side{
+	width: 50%;
+	padding: 30px 2%;
+	background-color: #EB2D2D;
+	text-align: center;
+}
+
+.depoimentos{
+	text-align: left;	
+	display: inline-block;
+	width: 100%;
+	max-width: 470px;
+}
+
+.depoimentos h2{
+	text-transform: uppercase;	
+	color: white;
+	font-size: 30px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.depoimentos p{
+	font-size: 15px;
+	color: white;
+	padding: 14px 0;
+	margin-left: 15px;
+}
+
+.second-side footer{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+}
+
+.controls{
+	position: relative;
+	right: 13px;
+}
+
+.second-side .controls img{
+	margin: 0 10px; 
+	cursor: pointer;
+}
+
+.second-side .controls img:hover{
+	opacity: 0.6;
+}
+
+.second-side footer p{
+	font-size: 20px;
+}
+
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<--CONTATO-->>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.contato {
+	text-align: center;
+	padding: 0 4%;
+
+}
+
+.contato .container{
+	max-width: 1020px;
+	padding: 10px 2%;
+
+}
+
+.contato form{
+	max-width: 530px;
+	margin: 0 auto;
+}
+
+.input-geral{
+	float: left;
+	padding: 10px 8px;
+}
+
+.input-geral input[type=text]{
+	width: 100%;
+	padding-left:8px;
+	height: 37px;
+	line-height: 37px;
+	border:	1px solid #ccc;
+	outline: none;
+}
+
+.input-geral:nth-of-type(5){
+	text-align: center;
+}
+
+.w-100{
+	width: 100%;
+}
+
+.w-100 textarea{
+	width: 100%;
+	height: 110px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	resize: none;
+}
+
+.w-100 input[type=submit]{
+	border-top:0;
+	border-right:0;
+	border-left:0;
+	display: inline-block;
+}
+
+.w-50{
+	width: 50%;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<--FOOTER-->>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+body > footer{
+	background-color: #242424;
+	padding: 27px 0;
+	color: white;
+}
+
+body > footer .container{
+	padding: 0 2%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+body > footer ul{
+	display: flex;
+}
+
+body > footer ul li{
+	list-style: none;
+	margin-right: 35px;
+}
+
+body > footer li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+footer p{
+	font-size: 24px;
+
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<--INICIO DA PAGINA VENDA->>>>>>>>>>>>>>>>>>>>*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<--VENDAS-->>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+	
+.vendas aside{
+	padding: 10px 20px;
+}
+
+.filtragem{
+	width: 25%;
+	float: left;
+}
+
+.filtragem h2{
+	font-weight: normal;
+	padding: 17px 0;
+}
+
+.filtro-1{
+	width: 100%;
+	margin: 8px 0 5px 0;
+	border-radius: 18px;
+
+}
+
+.filtro-1 .barra{
+	width: 100%;
+	height: 15px;
+	border-radius: 18px;
+	border: 1px solid #ccc;
+
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.filtro-1 .barra .progresso{
+	width: 25%;
+	height: 100%;
+	background: linear-gradient(to bottom, #f5faf7, #d9dbda);
+	border-radius: 18px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.filtro-1 .barra .seletor{
+	width: 10px;
+	height: 26px;
+	background: linear-gradient(to bottom, #dce3df 40%, #cdd4d0);
+	border-radius: 7px;
+	position: absolute;
+	left: calc(25% - 5px);
+	top: -6.5px;
+
+	cursor: pointer;
+}
+
+.filtro-1 .precos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.filtro-1 .precos p{
+	font-size: 13px;
+}
+
+.filtro-2{
+	margin-top: 30px;
+}
+
+.filtro-2 form input{
+	display: none;
+}
+
+.opcao-ano{
+	margin-top: 8px;
+}
+
+.opcao-ano label{
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	border:2px solid #ccc;
+	border-radius: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.opcao-ano > input[type=checkbox]:checked + label> .ball{
+	display: block;
+}
+
+.opcao-ano span{
+	font-size: 15px;
+	vertical-align:top;
+	margin-left: 5px;
+}
+
+.ball{
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	background-color: #aeb5b0;
+	display: none;
+}
+
+
+.carros-vendas{
+	width: 75%;
+	float: right;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.carros-vendas .box-exemplar{
+	width: 33.3%;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<--SOBRE-CAR-->>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.veiculo-view{
+	margin-top: 40px;
+
+}
+
+.veiculo-view .container{
+	max-width: 1080px;
+	display: flex;
+	padding: 20px 2%;
+}
+
+.galeria-single-car{
+	width: 60%;
+}
+
+.orientation-brad{
+	padding: 10px 0; 
+	font-style: italic;
+}
+
+.orientation-brad a{
+	text-decoration: none;
+	font-size: 25px;
+	color: black;
+}
+
+
+.orientation-brad span{
+	font-size: 25px;
+	margin: 0 20px;
+}
+
+
+.img-principal{
+	width: 100%;
+	padding-top: 62%;
+	background-image: url('../imagens/carro1.jpg');
+	background-size: 100% 100%;
+}
+
+.scroll-galeria{
+	width: 100%;
+	overflow-x:hidden;
+}
+
+.cover-controll{
+	width: 100%;
+	padding: 5px 30px;
+	position: relative;
+}
+
+.control-left{
+	width: 25px;
+	height: 25px;
+	background-image: url(../imagens/arrow-left.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 50%;
+	left: 1px;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.control-right{
+	width: 25px;
+	height: 25px;
+	background-image: url(../imagens/arrow-right.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right:1px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.control-right:hover, .control-left:hover{
+	opacity: 0.8;	
+}
+
+.scroll-galeria-wraper{
+	width: 200%;
+	display: flex;
+}
+
+.single-img-wraper{
+	width: calc(33.3% * (100 / 200));
+	padding: 5px;
+
+}
+
+.single-img-galeria{
+	width: 100%;	
+	padding-top:72%;
+	background-image: url('../imagens/chevette.jpg');
+	background-size: 100% 100%;	
+	cursor: pointer;
+}
+
+.single-img-galeria2{
+	width: 100%;	
+	padding-top:72%;
+	background-image: url('../imagens/fusca55.jpg');
+	background-size: 100% 100%;	
+	cursor: pointer;
+}
+
+.single-img-galeria3{
+	width: 100%;	
+	padding-top:72%;
+	background-image: url('../imagens/landau64.jpg');
+	background-size: 100% 100%;	
+	cursor: pointer;
+}
+
+.single-img-galeria4{
+	width: 100%;	
+	padding-top:72%;
+	background-image: url('../imagens/fordconsul.jpg');
+	background-size: 100% 100%;	
+	cursor: pointer;
+}
+
+.single-img-galeria5{
+	width: 100%;	
+	padding-top:72%;
+	background-image: url('../imagens/maverik.jpg');
+	background-size: 100% 100%;	
+	cursor: pointer;
+}
+
+.single-img-galeria6{
+	width: 100%;	
+	padding-top:72%;
+	background-image: url('../imagens/pumagte.jpg');
+	background-size: 100% 100%;	
+	cursor: pointer;
+}
+
+.single-img-galeria7{
+	width: 100%;	
+	padding-top:72%;
+	background-image: url('../imagens/voyage.jpg');
+	background-size: 100% 100%;	
+	cursor: pointer;
+}
+
+.single-img-galeria8{
+	width: 100%;	
+	padding-top:72%;
+	background-image: url('../imagens/mustang.jpg');
+	background-size: 100% 100%;	
+	cursor: pointer;
+}
+
+.single-img-galeria9{
+	width: 100%;	
+	padding-top:72%;
+	background-image: url('../imagens/belair.jpg');
+	background-size: 100% 100%;	
+	cursor: pointer;
+}
+
+
+.description-car{
+	width: 40%;
+	padding: 60px 2%;
+}
+
+.description-car h3{
+	font-weight: normal;
+	margin-top:8px; 
+}
+
+.description-car p{
+	font-weight: normal;
+	margin: 15px 0 35px 0;
+	max-width: 520px; 
+	font-size: 22px;
+}
+
+.description-car .boton{	
+	padding: 6px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>-/\/\/\/\/\/\-<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<--SOBRE_NOS-->>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<-SOBRE-NOS-->>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.sobre-nos {
+	text-align: center;
+	padding: 0 4% 20px 4%;
+}
+
+.sobre-nos .container{
+	max-width: 850px;
+	margin: 0 auto;
+	text-align: left;
+}	
+
+.sobre-nos1 .big-img-sobre{
+	width: 100%;
+	padding-top: 50%;
+	
+}
+
+.sobre-nos1 h2{
+	font-size: 30px;
+	margin-top:20px;
+}
+
+.sobre-nos1 p{
+	line-height: 28px;
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+.sobre-nos2{
+	display: flex;
+	margin: 20px 0;
+}
+
+.small-img-sobre{
+	width: 30%;
+	padding-top: 30%;
+	background-color: black;
+}
+
+.sobre-nos2 p{
+	width: 70%;
+	line-height: 28px;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>-/\/\/\/\/\/\-<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<--RESPONSIVO-->>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (max-width: 1300px){
+
+	.banner{
+		background-size: 90% auto;
+		background-position: 200% 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 1024px){
+
+	.banner{
+		height: 60vw;
+		min-height: 500px;
+		background-size: cover;	
+		background-position: -90% 100%;
+	}
+
+}
+
+@media screen and (max-width: 880px){
+
+	header .menu-desktop{
+		display: none;
+	}
+	
+	header .menu-mobile{
+		display: block;
+	}
+ 	
+
+	.text-box-banner{
+		padding:95px 70px;
+	}
+	
+	.box-banner-single{
+		height: 58px;
+		line-height:50px; 
+		font-size: 34px;
+	}
+
+	.text-box-banner > .box-banner-single:nth-of-type(1){
+		width: 205px;
+		padding-left:35px;
+	}
+
+	.text-box-banner > .box-banner-single:nth-of-type(2){
+		width: 145px;
+		padding-left:25px;
+		right: 10px;
+	}
+
+	.text-box-banner > .box-banner-single:nth-of-type(3){
+		width: 105px;
+		padding-left:15px;
+		right: 20px;
+	}
+
+	.text-box-banner > .box-banner-single:nth-of-type(4){
+		width: 295px;
+		padding-left: 20px;
+		right: 35px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 865px){
+	
+	.first-side{
+		text-align: center;
+	}
+
+	.content-first{
+		text-align: left;
+	}
+
+	.first-side .content-first a{
+		margin-top: 15px;
+		display: block;	
+	}
+
+	.filtragem h2{
+		font-size: 21px;
+	}
+
+
+	.veiculo-view > .container{
+		flex-direction: column;
+	}
+
+	.galeria-single-car{
+		width: 100%;
+		text-align: center;
+	}
+
+	.img-principal{
+		width: 85%;
+		padding-top: 62%;
+		display: inline-block;
+	}
+
+	.description-car{
+		width: 100%;
+		text-align: center;
+	}
+
+	.description-car h1, .description-car h3{
+		display: inline-block;
+		padding: 0 20px;
+	}
+
+	.description-car p{
+		max-width: none;
+		text-align: justify;
+	}
+
+}
+
+@media screen and (max-width: 800px){
+	
+	body > footer .container{
+		flex-direction: column;
+	}
+
+	body > footer ul li {
+		margin: 0 10px;
+	}
+
+	.carros-vendas > .box-exemplar{
+		width: 50%;
+	}
+
+	.carros-vendas > .box-exemplar:last-of-type{
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 720px){
+
+	.carros-vendas{
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+
+	.filtragem{
+		text-align: center;
+		width: 100%;
+		float:none;
+	}
+
+	.filtro-1{
+		display: inline-block;
+		width: 80%;
+	}
+
+	.filtro-2{
+		display: inline-block;
+		text-align: left;
+
+	}
+
+	.carros-vendas .box-exemplar .informe-car{
+		text-align: center;
+	}
+
+	.box-exemplar .informe-car a{
+		width: 150px;
+		height: 50px;
+		line-height: 48px;
+		display: inline-block;
+		text-align: center;
+		font-size: 20px;
+		padding-left: 2px;
+		margin-bottom: 10px; 
+	}
+}
+
+@media screen and (max-width: 650px){
+	
+	.veiculos-destaque > .container{
+		text-align: center;
+		flex-direction: column;
+	}
+
+	.box-exemplar{
+		width: 60%;
+	}
+
+	.box-exemplar .informe-car h2{
+		font-size: 30px;
+	}
+
+	.box-exemplar .informe-car p{
+		font-size: 23px;
+		margin: 2px 0 12px 0;
+	}
+
+	.carros-vendas .box-exemplar .informe-car h2{
+		font-size: 26px;
+	}
+
+	.carros-vendas .box-exemplar .informe-car p{
+		font-size: 18px;
+		margin: 2px 0 12px 0;
+	}
+}
+
+}
+
+
+
+@media screen and (max-width: 620px){
+ 	
+ 	.banner{
+		height: 60vw;
+		min-height: 500px;
+		background-size: cover;	
+		background-position: -45% 100%;
+	}
+
+
+
+	.box-exemplar{
+		width: 65%;
+	}
+
+	.box-exemplar .informe-car h2{
+		font-size: 30px;
+	}
+
+	.box-exemplar .informe-car p{
+		font-size: 23px;
+		margin: 2px 0 12px 0;
+	}
+
+}
+
+@media screen and (max-width: 585px){
+
+	.banner{
+		height: 60vw;
+		min-height: 500px;
+		background-size: cover;	
+		background-position: -21% 100%;
+	}
+
+
+	.box-exemplar{
+		width: 70%;
+	}
+
+	.box-exemplar .informe-car h2{
+		font-size: 25px;
+	}
+
+	.box-exemplar .informe-car p{
+		font-size: 18px;
+		margin: 2px 0 12px 0;
+	}
+
+	.exposicao{
+		flex-direction: column;
+	 
+	}
+
+	.first-side{
+		width: 100%;
+		text-align:center;
+	}
+
+	.second-side{
+		width: 100%;
+	}
+
+
+
+	.w-50{
+		width: 100%;
+	}	
+
+	.carros-vendas{
+		flex-direction: column;
+	}
+
+	.carros-vendas .box-exemplar{
+		width: 	65%;
+	}
+
+	.carros-vendas .box-exemplar .informe-car h2{
+		font-size: 25px;
+	}
+
+	.carros-vendas .box-exemplar .informe-car p{
+		font-size: 18px;
+		margin: 2px 0 12px 0;
+	}
+
+
+
+	.sobre-nos1 h2{
+		font-size: 27px;
+		margin-top:20px;
+		text-align: center;
+	}
+
+	.sobre-nos1 p{
+		line-height: 28px;
+		font-size: 17px;
+		padding-top: 15px;
+	}
+
+	.sobre-nos2{
+		flex-direction: column;
+		align-items: center;	
+	}
+
+	.small-img-sobre{
+		width: 45%;
+		padding-top: 45%;	
+		margin-bottom: 15px;
+	}
+
+	.sobre-nos2 p{
+		width: 100%;
+		line-height: 28px;
+		font-size: 17px;
+		padding: 0 20px;
+	}
+
+	body footer ul{
+		display: none;
+	}
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-+-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
